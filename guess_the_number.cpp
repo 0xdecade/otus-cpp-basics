@@ -10,6 +10,17 @@ int main(int argc, char **argv)
 
     std::string param;
 
+    if (argc >= 1)
+    {
+        param = argv[1];
+
+        if (param == "-table")
+        {
+            showHighScores();
+            return 0;
+        }
+    }
+
     if (argc >= 3)
     {
         int paramValue = std::stoi(argv[2]);
