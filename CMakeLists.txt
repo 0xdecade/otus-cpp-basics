@@ -8,4 +8,5 @@ add_executable(
 	random_value.cpp
 	check_value.cpp
 	high_scores.cpp
+	argument.cpp
 )

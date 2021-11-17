@@ -1,11 +1,28 @@
 #include <iostream>
 #include "random_value.h"
+#include "argument.h"
 #include "check_value.h"
 #include "high_scores.h"
 
 int main(int argc, char **argv)
 {
     int max_value = 100;
+
+    std::string param;
+
+    if (argc >= 3)
+    {
+        int paramValue = std::stoi(argv[2]);
+        if (param == "-max")
+        {
+            setMax(paramValue, max_value);
+        }
+    }
+    else
+    {
+        std::cout << "Wrong usage! The argument " << param << " requires some value!" << std::endl;
+        return 1;
+    }
 
     std::string username = "";
     unsigned int attempts = 0;
