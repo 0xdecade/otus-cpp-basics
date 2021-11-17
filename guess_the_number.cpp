@@ -10,6 +10,12 @@ int main(int argc, char **argv)
 
     std::string param;
 
+    if (argc >= 4)
+    {
+        std::cout << "Wrong usage! Only one argument can be set at a time!" << std::endl;
+        return 1;
+    }
+
     if (argc >= 1)
     {
         param = argv[1];
@@ -27,6 +33,10 @@ int main(int argc, char **argv)
         if (param == "-max")
         {
             setMax(paramValue, max_value);
+        }
+        if (param == "-level")
+        {
+            setLevel(paramValue, max_value);
         }
     }
     else
