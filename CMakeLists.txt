@@ -9,4 +9,5 @@ add_executable(
 	check_value.cpp
 	high_scores.cpp
 	argument.cpp
+	game.cpp
 )
