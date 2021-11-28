@@ -5,5 +5,6 @@ class Variable : public ASTNode
 {
 public:
     explicit Variable(const std::string &val);
+    Variable(const Variable &other) = delete;
     ~Variable();
 };
