@@ -21,6 +21,7 @@ if (CMAKE_CXX_COMPILER_ID MATCHES "Clang" OR
     CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
     target_compile_options(calc PRIVATE 
         -g
+        -O0
         -Wall
         -Wextra
         -Werror
