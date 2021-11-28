@@ -2,6 +2,7 @@
 #include "argument.h"
 #include "high_scores.h"
 #include "game.h"
+#include "random_value.h"
 
 int main(int argc, char **argv)
 {
@@ -15,6 +16,6 @@ int main(int argc, char **argv)
     std::cout << "Hi! Enter your name, please:" << std::endl;
     std::cin >> username;
 
-    gameLoop(attempts, guess, secretNumber, username);
+    gameLoop(secretNumber, username);
     return 0;
 }
